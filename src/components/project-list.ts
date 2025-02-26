@@ -3,9 +3,7 @@ import { Droppable } from '../models/drag-drop-interfaces.js';
 import { Project, ProjectStatus } from '../models/project.js';
 import { ProjectItem } from './project-item.js';
 import { autobind } from '../decorators/autobind.js';
-import { ProjectState } from '../state/project-state.js';
-
-const projectState = ProjectState.getInstance();
+import { projectState } from '../state/project-state.js';
 
 export class ProjectList extends ProjectComponent<HTMLDivElement, HTMLElement> implements Droppable {
     assignedProjects: Project[];

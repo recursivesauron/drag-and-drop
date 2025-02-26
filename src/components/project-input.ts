@@ -1,10 +1,7 @@
 import { ProjectComponent } from './project-component.js';
 import { autobind } from '../decorators/autobind.js';
 import { Validatable, validate } from '../util/validation.js';
-import { ProjectState } from '../state/project-state.js';
-
-const projectState = ProjectState.getInstance();
-
+import { projectState } from '../state/project-state.js';
 
 export class ProjectInput extends ProjectComponent<HTMLDivElement, HTMLFormElement>{
     titleInputElement: HTMLInputElement;
